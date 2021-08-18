@@ -1,9 +1,9 @@
 # sick68-firmware
 
 CircuitPython based firmware for sick68 - a 3d printed &amp; handwired mechanical keyboard
-take a look at it here: https://imgur.com/gallery/AyoJ1zF
 
 ![example image of my sick68](https://i.imgur.com/vyssxIp.jpeg)
+some more pictures: https://imgur.com/gallery/AyoJ1zF
 
 ## Features
 
