@@ -14,13 +14,13 @@ from adafruit_hid.consumer_control_code import ConsumerControlCode
 cc = ConsumerControl(usb_hid.devices)
 
 # initializing USB hid device
-keeboard = None
+keyboard = None
 for dev in list(usb_hid.devices):
     if ((dev.usage == 0x06) and
         (dev.usage_page == 0x01) and
         hasattr(dev, "send_report")):
-        keeboard = dev
-if keeboard == None:
+        keyboard = dev
+if keyboard == None:
     raise Exception("Device cannot be found")
 
 # custom keycodes, actions are handeled in handleCustomkeycodes function
@@ -202,6 +202,6 @@ while True:
     else:
         for i in range(6):
             reportArray[i+2] = keysPressed[i] if i < len(keysPressed) else 0 # Add keycode to report.
-    keeboard.send_report(struct.pack("8B",*reportArray))
+    keyboard.send_report(struct.pack("8B",*reportArray))
     reportArray = [0x00] * 8
     keysPressed = []
