@@ -1,4 +1,4 @@
-# This code is a heavily modified version of: https://gist.github.com/wulfboy-95/0969c4f7135aa46e02bc0a9d3990286e
+# This code is a modified version of: https://gist.github.com/wulfboy-95/0969c4f7135aa46e02bc0a9d3990286e
 
 import board
 import digitalio
